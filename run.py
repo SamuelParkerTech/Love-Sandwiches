@@ -122,6 +122,7 @@ def get_stock_values(data):
     for Love Sandwiches. 
     """
 
+    headings = SHEET.worksheet("stock").get_all_values()[0]
     headings = SHEET.worksheet('stock').row_values(1)
 
     print("Make the following numbers of sandwiches for next market:\n")
