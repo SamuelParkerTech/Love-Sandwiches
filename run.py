@@ -130,7 +130,7 @@ def get_stock_values(data):
     new_data = {}
     for heading, stock_num in zip(headings, data):
         new_data[heading] = stock_num
-        return new_data
+    return new_data
     
     return {heading: data for heading, data in zip(headings, data)}
 
